@@ -1,0 +1,4 @@
+div {
+  color: rgba(0, 0, 0, .5);
+  background-color: adjust-hue($color: #000000, $degrees: 0);
+}
