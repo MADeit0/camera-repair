@@ -1,4 +1,9 @@
-div {
-  color: rgba(0, 0, 0, 0.5);
-  background-color: black;
+@font-face {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./roboto-mono/roboto-mono-v5-latin-regular.woff") format("woff"), url("./roboto-mono/roboto-mono-v5-latin-regular.woff2") format("woff2"), url("./roboto-mono/roboto-mono-v5-latin-regular.ttf") format("ttf");
+}
+.page {
+  font-family: "roboto", Arial, sans-serif;
 }/*# sourceMappingURL=index.css.map */

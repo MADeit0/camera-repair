@@ -6,14 +6,60 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ремонт фотоаппаратов</title>
-  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
   <div class="page">
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!--  -->
+    <header class="header">
+      <p class="logo">C-Works</p>
+      <h1 class="header__title">Ремонт</h1>
+      <p class="header_subtitle">Плёночных фотоаппаратов</p>
+
+      <form action="">
+        <fieldset>
+          <input type="text">
+        </fieldset>
+        <button type="submit">Отремонтируйте камеру</button>
+      </form>
+    </header>
+    <!--  -->
+    <main class="content">
+      <section class="description" aria-label="Что мы ремонтируем">
+        <div class="grid-wrap">
+          <img class="grid-wrap__img" src="../src/img/ph_m2.jpg" alt="Камера М2">
+          <div class="grid-wrap__pouring"></div>
+          <div class="grid-wrap__pouring"></div>
+          <img class="grid-wrap__img" src="../src/img/ph_camera.jpg" alt="Камера М2">
+        </div>
+        <p class="section-text">Мы ремонтируем плёночные фотоаппараты. Полносстью механические камеры, относительно
+          современные камеры на
+          электронике, проводим CLA камер, принимаем в зачёт оплаты сломаные тушки и объективы.</p>
+      </section>
+      <section>
+        <h2 class="section__title">Для энтузиастов, от энтузиастов 👈</h2>
+        <article class="card">
+          <p class="card__text">CLA</p>
+          <h3 class="card__title">Чистка камер.</h3>
+          <p class="card__text">Замена уплотнителей, дампфера зеркала, смазка механизмов, юстировка.</p>
+          <p class="card__price">от 2000Р</p>
+        </article>
+      </section>
+      <section>
+        <h2 class="section-title">Полная гарантия ⚡️</h2>
+      </section>
+      <section>
+        <h2 class="section-title">Поддержите нас 🤝</h2>
+        <p class="section-text">Ещё вы сможете безвозмездно поддержать нас на Patreon, пока мы ещё создали аккаунт, но
+          как только это
+          сделаем, сообщим вам.</p>
+      </section>
+    </main>
+    <!--  -->
+    <footer class="footer"></footer>
+    <!--  -->
   </div>
 </body>
 
