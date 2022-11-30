@@ -1,0 +1,40 @@
+@mixin mobile {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+.btn-write {
+  letter-spacing: 0.375px;
+  box-sizing: border-box;
+  margin: 0;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+
+  &_size_s {
+    font-size: clamp(12px, 10.571px + 0.446vw, 14px);
+    font-weight: 400;
+    line-height: 1.71;
+
+    @include mobile {
+      line-height: 1.5;
+    }
+  }
+
+  &_theme_dark {
+    color: white;
+    background-color: #47474C;
+    border-radius: 8px;
+    padding: clamp(13px, 18.143px + -0.67vw, 16px) 30px;
+
+    &:hover {
+     background-color: #232327;
+     color: #8E8E98;
+    }
+    &:active {
+      background-color: #47474C;
+      color: white;
+      transition: .1s ease-in-out;
+    }
+  }
+}
