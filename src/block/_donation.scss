@@ -1,0 +1,9 @@
+.donation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(40px, 28.571px + 1.488vw, 50px);
+  box-sizing: border-box;
+  padding-top: clamp(40px, 25.714px + 4.464vw, 60px);
+  padding-bottom: clamp(30px, 8.571px + 6.696vw, 60px);
+}

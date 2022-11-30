@@ -1,0 +1,21 @@
+$roboto-font-path: "../../src/vendor/fonts/roboto";
+
+@font-face {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('#{$roboto-font-path}/Roboto.woff') format('woff'),
+       url('#{$roboto-font-path}/Roboto.woff2') format('woff2'),
+       url('#{$roboto-font-path}/Roboto.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('#{$roboto-font-path}/Robotomedium.woff') format('woff'),
+       url('#{$roboto-font-path}/Robotomedium.woff2') format('woff2'),
+       url('#{$roboto-font-path}/Robotomedium.ttf') format('ttf');
+}
