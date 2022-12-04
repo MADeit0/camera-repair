@@ -10,24 +10,26 @@
   <link rel="stylesheet" href="./css/index.css">
 </head>
 
-<body>
+<body class="body">
   <div class="page">
     <!--  -->
-    <header class="header">
-      <p class="logo">C-Works</p>
-      <h1 class="header__title">Ремонт</h1>
-      <p class="header_subtitle">Плёночных фотоаппаратов</p>
+    <header class="header page__header">
+      <p class="logo logo_indent_s">C-Works</p>
+      <h1 class="header__title header__title_indent_s">Ремонт</h1>
+      <p class="header__subtitle header__subtitle_indent_s">Плёночных фотоаппаратов</p>
 
-      <form action="">
-        <fieldset>
-          <input type="text">
+      <form class="btn-submit" action="#" method="post" name="submitEmail">
+        <fieldset class="btn-submit__field btn-submit_size_m">
+          <input class="btn-submit__input" type="email">
+          <button class="btn-submit__btn" type="submit">Отремонтируйте камеру</button>
         </fieldset>
-        <button type="submit">Отремонтируйте камеру</button>
+        <p class="btn-submit__text btn-submit__text_indent_s">Напишите нам и мы свяжемся с вами.</p>
       </form>
+
     </header>
     <!--  -->
     <main class="content">
-      <section class="description" aria-label="Что мы ремонтируем">
+      <section class="description content__description" aria-label="Что мы ремонтируем">
         <div class="flex-wrap">
           <div class="flex-wrap_section flex-wrap_section_size_s flex-wrap_section_row-column">
             <img class="flex-wrap__img" src="../src/img/ph_m2.jpg" alt="Камера М2">
@@ -38,11 +40,12 @@
             <div class="flex-wrap__pouring flex-wrap__pouring_size_m flex-wrap__pouring_theme_swamp"></div>
           </div>
         </div>
-        <p class="section-text section-text_lateral_l">Мы ремонтируем плёночные фотоаппараты. Полносстью механические камеры, относительно
+        <p class="section-text section-text_lateral_l">Мы ремонтируем плёночные фотоаппараты. Полносстью механические
+          камеры, относительно
           современные камеры на
           электронике, проводим CLA камер, принимаем в зачёт оплаты сломаные тушки и объективы.</p>
       </section>
-      <section class="cards">
+      <section class="cards content__cards">
         <h2 class="section-title">Для энтузиастов, от энтузиастов 👈</h2>
         <article class="card card_border_m">
           <p class="card__text card__text_size_m card__text_indent_s">CLA</p>
@@ -53,7 +56,7 @@
         </article>
 
       </section>
-      <section class="cards">
+      <section class="cards content__cards">
         <h2 class="section-title">Полная гарантия ⚡️</h2>
         <div>
           <article class="card card_border_s">
@@ -63,7 +66,7 @@
           </article>
         </div>
       </section>
-      <section class="donation">
+      <section class="donation content__donation">
         <h2 class="section-title section-title_indent_s">Поддержите нас 🤝</h2>
         <button class="btn-write btn-write_theme_dark btn-write_size_s" type="button">Напишите нам если хотите
           помочь!</button>
