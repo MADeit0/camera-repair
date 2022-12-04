@@ -1,4 +1,75 @@
-div {
-  color: rgba(0, 0, 0, .5);
-  background-color: adjust-hue($color: #000000, $degrees: 0);
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+.header {
+  width: 100%;
+
+  &_size_s {
+    max-width: clamp(648px, 108.571px + 70.238vw, 1120px);
+
+    @include tablet {
+      max-width: clamp(280px, 17.143px + 82.143vw, 648px);
+    }
+  }
+
+  &__title {
+    font-size: clamp(70px, 22px + 6.25vw, 112px);
+    font-weight: 400;
+    line-height: 1;
+    color: white;
+    padding: 0;
+    margin: 0;
+
+    @include tablet {
+      font-size: clamp(50px, 35.714px + 4.464vw, 70px);
+      line-height: 1.29;
+    }
+
+    @include mobile {
+      line-height: 1.2;
+    }
+
+    &_indent_s {
+      padding-bottom: clamp(0px, -22.857px + 2.976vw, 20px);
+
+      @include tablet {
+        padding-bottom: clamp(0px, 17.143px + -2.232vw, 10px);
+      }
+    }
+  }
+
+  &__subtitle {
+    font-size: clamp(50px, 15.714px + 4.464vw, 80px);
+    font-weight: 400;
+    line-height: 0.88;
+    color: white;
+    padding: 0;
+    margin: 0;
+
+    @include tablet {
+      font-size: clamp(30px, 15.714px + 4.464vw, 50px);
+      line-height: 1.2;
+    }
+
+    @include mobile {
+      line-height: 1.27;
+    }
+
+    &_indent_s {
+      padding-bottom: clamp(230px, 744.286px + -35.714vw, 470px);
+
+      @include tablet {
+        padding-bottom: clamp(260px, 110px + 46.875vw, 470px);
+      }
+    }
+  }
 }

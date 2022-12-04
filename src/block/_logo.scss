@@ -1,0 +1,35 @@
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.36;
+  color: white;
+  margin: 0;
+
+  &:after {
+    content: 'мы открылись';
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    color: black;
+    box-sizing: border-box;
+    background-color: #25E197;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-left: 20px;
+  }
+
+  &_indent_s {
+    padding-bottom: 60px;
+  }
+
+  &_indent_m {
+    padding-bottom: clamp(84px, 255.429px + -22.321vw, 184px);
+  }
+}

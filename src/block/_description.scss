@@ -4,5 +4,5 @@
   box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 60px;
-  gap: 120px;
+  gap: clamp(60px, 17.143px + 13.393vw, 120px);
 }

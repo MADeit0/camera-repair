@@ -1,5 +1,24 @@
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 .page {
-  font-family: 'roboto', Arial, sans-serif;
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1440px;
+  font-family: 'roboto', Arial, sans-serif;
+  margin: 0 auto;
+  background-color: black;
+
+  &__header {
+    padding-top: clamp(20px, -8.571px + 8.929vw, 60px);
+    padding-bottom: clamp(30px, -4.286px + 4.464vw, 60px);
+
+    @include tablet {
+      padding-bottom: clamp(20px, 12.857px + 2.232vw, 30px);
+    }
+  }
 }
